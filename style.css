@@ -1,0 +1,243 @@
+body {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    background-color: rgba(244, 237, 225, 1);
+}
+
+/*Fonts****************************************************************************************************************************************/
+
+@font-face {
+    font-family: "Kotayk";
+    src: url("Fonts/Kotayk-Italic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Adska";
+    src: url("Fonts/Adksa___.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "NorKirk";
+    src: url("Fonts/NorKirk.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Vrdznagir";
+    src: url("Fonts/Vrdznagir.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "KotaykR";
+    src: url("Fonts/Kotayk-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.cormorant {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+}
+
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.noto-sans-armenian {
+    font-family: "Noto Sans Armenian", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: 100; */
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/*head****************************************************************************************************************************************/
+
+.h-img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: -150%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.head {
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    max-width: 480px;
+    overflow: hidden;
+    padding: 0;
+}
+
+video {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.welcome  {
+    max-width: 280px;
+    width: 100%;
+    position: absolute;
+    top: -20%;  
+    left: 50%;
+    transform: translateX(-55%);
+}
+
+.welcome_img {
+    width: 280px;
+    height: 100px;
+}
+
+.welcome.act {
+    animation: 1s Welcome forwards linear;
+}
+
+@keyframes Welcome {
+    from {
+        top: -20%;
+    }
+
+    to {
+        top: 8%;
+    }
+}
+
+.Saf {
+    margin: 0;
+    padding: 0;
+    font-family: "Adska", sans-serif;
+    font-size: 140px;
+    font-weight:100 ;
+    position: absolute;
+    color: rgba(50, 67, 25, 1);
+    left: -25%;
+    transform: translateX(-50%);
+}
+
+.Saf.act {
+    animation: 1s Safira forwards linear;
+}
+
+@keyframes Safira {
+    from {
+        left: -25%;
+    }
+    to {
+        left: 45%;
+    }
+}
+
+.Oneder {
+    margin: 0;
+    padding: 0;
+    font-family: "Adska", sans-serif;
+    font-size: 75px;
+    font-weight:100 ;
+    position: absolute;
+    color: rgba(50, 67, 25, 1);
+    left: -30%;
+    transform: translateX(-50%);
+    top: 21%;
+}
+
+.Oneder.act {
+    animation: 1s Oneder forwards linear;
+}
+
+@keyframes Oneder {
+    from {
+        left: -30%;
+    }
+    to {
+        left: 60%;
+    }
+}
+/*Later***************************************************************************************************************************************/
+
+
+.later {
+    background-image: url(Images/Backgraound.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    /* margin-top: 80px; */
+    max-width: 480px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    transform: translateY(-20%);
+    opacity: 0;
+    transition: 1s;
+    z-index: 12;
+}
+
+.d {
+    font-family: "Great Vibes";
+    font-size: 26px;
+    color: rgba(50, 67, 25, 1);
+}
+
+.later.active {
+    transform: translateY(-0%);
+    opacity: 1;
+}
+
+.lng-latetext1 {
+    font-family: 'Kotayk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(50, 67, 25, 1);
+}
+
+.lng-latetext2 {
+    /* margin-top: 27px; */
+    color: rgba(50, 67, 25, 1);
+    font-family: "Noto Sans Armenian", sans-serif;
+    transform: translateY(-5%);
+    font-size: 13px;
+
+}
+
+.void {
+    height: 1000px;
+}
