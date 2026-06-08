@@ -451,7 +451,7 @@ a {
 }
 
 .mapheader {
-    margin-top: 285px;
+    margin-top: 300px;
     font-size: 18px;
     font-family: "Noto Sans Armenian", sans-serif;
     font-weight: 400;
@@ -465,7 +465,7 @@ a {
 .arch {
     width: 380px;
     position: relative;
-    top: 6%;
+    top: 7%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -638,7 +638,7 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     height: 400px;
     z-index: 1;
 }
@@ -656,7 +656,7 @@ p {
     align-items: center;
     justify-content: center;
 
-    gap:100px;
+    gap: 100px;
 
     max-width: 480px;
     width: 100%;
