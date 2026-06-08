@@ -109,7 +109,7 @@ video {
     position: absolute;
     top: -20%;  
     left: 50%;
-    transform: translateX(-55%);
+    transform: translateX(-50%);
 }
 
 .welcome_img {
@@ -139,7 +139,7 @@ video {
     font-weight:100 ;
     position: absolute;
     color: rgba(50, 67, 25, 1);
-    left: -25%;
+    left: -35%;
     transform: translateX(-50%);
 }
 
@@ -149,7 +149,7 @@ video {
 
 @keyframes Safira {
     from {
-        left: -25%;
+        left: -35%;
     }
     to {
         left: 45%;
@@ -178,18 +178,18 @@ video {
         left: -30%;
     }
     to {
-        left: 60%;
+        left: 63%;
     }
 }
 /*Later***************************************************************************************************************************************/
 
 
 .later {
+    margin: auto;
     background-image: url(Images/Backgraound.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin: auto;
     /* margin-top: 80px; */
     max-width: 480px;
     width: 100%;
@@ -234,7 +234,7 @@ video {
     color: rgba(50, 67, 25, 1);
     font-family: "Noto Sans Armenian", sans-serif;
     transform: translateY(-5%);
-    font-size: 13px;
+    font-size: 11px;
 
 }
 
