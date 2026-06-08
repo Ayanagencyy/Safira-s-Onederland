@@ -536,7 +536,7 @@ a {
     z-index: 2;
     box-sizing: border-box;
 
-    width: 325px;
+    width: 290px;
     height: 40px;
 
     background: rgba(255, 255, 255, 0.8);
@@ -582,11 +582,11 @@ p {
 .att {
     position: relative;
     z-index: 2;
-    max-width: 325px;
+    max-width: 290px;
     width: 100%;
     height: 50px;
     display: flex;
-    gap: 30px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
 
@@ -604,10 +604,10 @@ p {
     justify-content: center;
     align-items: center;
 
-    max-width: 150px;
+    max-width: 130px;
     width: 100%;
     height: 46px;
-
+    font-size: 12px;
     background: rgba(255, 255, 255, 0.8);
     border: 1px solid #5C201833;
     color: #5C201833;
@@ -633,7 +633,7 @@ p {
 
 
 .back {
-    max-width: 420px;
+    max-width: 380px;
     margin-top: 12px;
     position: absolute;
     top: 50%;
