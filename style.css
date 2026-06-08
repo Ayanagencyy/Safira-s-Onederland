@@ -412,13 +412,13 @@ video {
 }
 
 .placetext {
-    font-size: 12px;
+    font-size: 10px;
     font-family: "Noto Sans Armenian", sans-serif;
     font-weight: 400;
 }
 
 .placespan {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
     font-family: "Noto sans Armenian";
 }
@@ -447,12 +447,11 @@ a {
     margin-top: 10px;
     margin-bottom: 18px;
     color: rgba(61, 82, 30, 1);
-    ;
 }
 
 .mapheader {
     margin-top: 285px;
-    font-size: 24px;
+    font-size: 18px;
     font-family: "Noto Sans Armenian", sans-serif;
     font-weight: 400;
 }
@@ -465,7 +464,7 @@ a {
 .arch {
     width: 380px;
     position: relative;
-    top: 7%;
+    top: 6%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -529,16 +528,6 @@ a {
 }
 
 /*********************************************************************************************************************/
-
-.back {
-    width: 380px;
-    position: absolute;
-    max-width: 450px;
-    width: 100%;
-    height: 566px;
-    z-index: 1;
-}
-
 
 .inp {
     /* Input */
@@ -614,7 +603,7 @@ p {
     justify-content: center;
     align-items: center;
 
-    max-width: 135px;
+    max-width: 150px;
     width: 100%;
     height: 46px;
 
@@ -631,21 +620,26 @@ p {
 }
 
 .back_box {
-    width: 100%;
-    height: 390px;
-    margin: auto;
-    background-image: url(Images/back.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    gap:10px;
-
+    gap: 12px;
     max-width: 480px;
+}
+
+
+.back {
+    max-width: 450px;
+    margin-top: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 400px;
+    z-index: 1;
 }
 
 
@@ -661,7 +655,7 @@ p {
     align-items: center;
     justify-content: center;
 
-    gap: 24px;
+    gap:100px;
 
     max-width: 480px;
     width: 100%;
