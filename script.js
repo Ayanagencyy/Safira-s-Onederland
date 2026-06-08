@@ -152,7 +152,7 @@ video.addEventListener('ended', () => {
 
 });
 
-const targetDate = new Date('2026-07-01T00:00:00');
+const targetDate = new Date('2026-06-19T00:00:00');
 
 function calculateTimeLeft() {
     const difference = targetDate - new Date();
@@ -167,22 +167,22 @@ function calculateTimeLeft() {
 }
 
 
-// function updateTimer() {
-//     const timeLeft = calculateTimeLeft();
+function updateTimer() {
+    const timeLeft = calculateTimeLeft();
 
-//     if (!timeLeft) {
-//         timerContainer.innerHTML = '<div class="left"">Time over</div>';
-//         return;
-//     }
+    if (!timeLeft) {
+        timerContainer.innerHTML = '<div class="left"">Time over</div>';
+        return;
+    }
 
-//     daysElement.textContent = String(timeLeft.days).padStart(2, '0');
-//     hoursElement.textContent = String(timeLeft.hours).padStart(2, '0');
-//     minutesElement.textContent = String(timeLeft.minutes).padStart(2, '0');
-//     secondsElement.textContent = String(timeLeft.seconds).padStart(2, '0');
-// }
+    daysElement.textContent = String(timeLeft.days).padStart(2, '0');
+    hoursElement.textContent = String(timeLeft.hours).padStart(2, '0');
+    minutesElement.textContent = String(timeLeft.minutes).padStart(2, '0');
+    secondsElement.textContent = String(timeLeft.seconds).padStart(2, '0');
+}
 
-// setInterval(updateTimer, 1000);
-// updateTimer();
+setInterval(updateTimer, 1000);
+updateTimer();
 
 
 const buttons = document.querySelectorAll(".lang-btn");
