@@ -90,24 +90,24 @@ if (animitems.length > 0) {
 }
 
 
-// window.addEventListener('DOMContentLoaded', function () {
-//     const audioElement = document.getElementById('audioElement');
-//     const audiobtn = document.getElementById('audiobtnRef');
-//     const audioImg = document.getElementById('audioImg');
+window.addEventListener('DOMContentLoaded', function () {
+    const audioElement = document.getElementById('audioElement');
+    const audiobtn = document.getElementById('audiobtnRef');
+    const audioImg = document.getElementById('audioImg');
 
-//     audiobtn.addEventListener('click', function () {
-//         if (audioElement.paused) {
-//             audioElement.play();
-//             audioImg.src = "Play.png";
-//         } else {
-//             audioElement.pause();
-//             audioImg.src = "Pause.png";
-//         }
-//     });
+    audiobtn.addEventListener('click', function () {
+        if (audioElement.paused) {
+            audioElement.play();
+            audioImg.src = "Images/play.png";
+        } else {
+            audioElement.pause();
+            audioImg.src = "Images/pause.png";
+        }
+    });
 
-//     audiobtn.style.cursor = 'pointer';
-//     audiobtn.style.zIndex = '1000';
-// });
+    audiobtn.style.cursor = 'pointer';
+    audiobtn.style.zIndex = '1000';
+});
 
 function disableScroll() {
     document.body.style.overflow = 'hidden';
@@ -132,7 +132,7 @@ const video = document.querySelector('video');
 const anim1 = document.querySelector('.welcome');
 const anim2 = document.querySelector('.Saf');
 const anim3 = document.querySelector('.Oneder');
-// const anim4 = document.querySelector('.lang-switch');
+const anim4 = document.querySelector('.au');
 // const anim5 = document.querySelector('.h-img');
 // const anim6 = document.querySelector('.date-text');
 // const anim7 = document.querySelector('.date2');
@@ -235,6 +235,7 @@ video1.addEventListener('ended', () => {
     anim1.classList.add('act');
     anim2.classList.add('act');
     anim3.classList.add('act');
+    anim4.classList.add('act');
 
     enableScroll();
 });

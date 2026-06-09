@@ -919,3 +919,60 @@ h6 {
     font-size: 32px;
     cursor: pointer;
 }
+
+
+/*Audio****************************************************************************************************************************************/
+
+.au {
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: 80%;
+    margin: auto;
+    /* margin-top: 30px; */
+    max-width: 480px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audio-controls {
+    position: relative;
+}
+
+.audiobtn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    z-index: 1000 !important;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: none !important;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.audiobtn:hover {
+    opacity: 1;
+    transform: scale(1.1) !important;
+}
+
+.au.act {
+    animation: 1s Auido forwards linear;
+}
+
+@keyframes Auido {
+    from {
+        left: 80%;
+    }
+
+    to {
+        left: 40%;
+    }
+}
