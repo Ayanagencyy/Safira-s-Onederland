@@ -138,19 +138,19 @@ const anim3 = document.querySelector('.Oneder');
 // const anim7 = document.querySelector('.date2');
 // const anim8 = document.querySelector('.a_a');
 
-video.addEventListener('ended', () => {
+// video.addEventListener('ended', () => {
 
-    anim1.classList.add('act');
-    anim2.classList.add('act');
-    anim3.classList.add('act');
-    // anim4.classList.add('act');
-    // anim5.classList.add('act');
-    // anim6.classList.add('act');
-    // anim7.classList.add('act');
-    // anim8.classList.add('act');
-    enableScroll()
+//     anim1.classList.add('act');
+//     anim2.classList.add('act');
+//     anim3.classList.add('act');
+//     // anim4.classList.add('act');
+//     // anim5.classList.add('act');
+//     // anim6.classList.add('act');
+//     // anim7.classList.add('act');
+//     // anim8.classList.add('act');
+//     enableScroll()
 
-});
+// });
 
 const targetDate = new Date('2026-06-19T00:00:00');
 
@@ -212,3 +212,29 @@ buttons.forEach(btn => {
 
 //     document.querySelector(`[data - lang= "${savedLang}"]`)?.click();
 // });
+
+const startScreen = document.getElementById('startScreen');
+const video1 = document.getElementById('introVideo');
+const audio = document.getElementById('audioElement');
+
+disableScroll();
+
+startScreen.addEventListener('click', async () => {
+    try {
+        await video1.play();
+        await audio.play();
+
+        startScreen.style.display = 'none';
+    } catch (err) {
+        console.error(err);
+    }
+});
+
+video1.addEventListener('ended', () => {
+
+    anim1.classList.add('act');
+    anim2.classList.add('act');
+    anim3.classList.add('act');
+
+    enableScroll();
+});

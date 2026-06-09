@@ -31,21 +31,39 @@
 </head>
 
 <body>
+    <div id="startScreen">
+    </div>
+
     <div class="head">
-        <video autoplay preload="false" muted playsinline>
-            <source src="Video/Start_Vid.MOV" height="1000" type="video/mp4">
+
+        <video id="introVideo" preload="metadata" playsinline>
+            <source src="Video/Start_Vid.MOV" type="video/mp4">
         </video>
+
         <div class="welcome">
             <img src="Images/welcome to.png" alt="" class="welcome_img">
         </div>
+
         <div class="Saf">
-            <p>
-                Safira’s
-            </p>
+            <p>Safira's</p>
         </div>
+
         <div class="Oneder">
             <p>Onederland</p>
         </div>
+
+        <div class="au">
+            <audio id="audioElement" loop>
+                <source src="Music/Ed Sheeran - Thinking Out Loud (Campfire Version).mp3" type="audio/mpeg">
+            </audio>
+
+            <!-- <div class="audio-controls">
+                <button id="audiobtnRef" class="audiobtn">
+                    <img id="audioImg" src="Pause.png" alt="" width="60">
+                </button>
+            </div> -->
+        </div>
+
     </div>
     <div class="later _anim-items">
         <p class="lng-latetext1" data-long="h1">Սիրելի' հյուրեր,</p>
