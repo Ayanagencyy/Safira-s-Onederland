@@ -362,7 +362,7 @@ video {
 /*Maps****************************************************************************************************************************************/
 
 .maps {
-    margin: auto;
+    margin: -100px auto;
     background-image: url(Images/map_background.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -633,7 +633,7 @@ p {
 
 
 .back {
-    max-width: 380px;
+    max-width: 420px;
     margin-top: 12px;
     position: absolute;
     top: 50%;
@@ -648,7 +648,7 @@ p {
     /* Form */
     position: relative;
     z-index: 2;
-    margin:100px auto 10%;
+    margin: 100px auto 0%;
     box-sizing: border-box;
     /* Auto layout */
     display: flex;
@@ -726,7 +726,7 @@ h1 {
 /*Ayan*/
 
 .Mar {
-        margin: -50px auto 55px;
+    margin: -50px auto 55px;
 }
 
 .b {
@@ -796,18 +796,20 @@ h6 {
     opacity: 1;
 }
 
-.End  {
+.End {
     z-index: 1;
     max-width: 480px;
     width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 
 .alert {
+    font-family: "Noto Serif Armenian";
+
     margin: 30px auto 10px;
     max-width: 380px;
     width: 100%;
@@ -818,10 +820,90 @@ h6 {
     border: 1px solid rgba(91, 97, 66, 0.15);
     border-radius: 10px;
     /* background-color: transparent; */
-    color: rgba(91, 97, 66, 0.15);
+    color: rgba(91, 97, 66, 1);
 }
 
 
 .palert {
     font-size: 11px;
+}
+
+/**********************************************************************/
+
+.imgs1 {
+    margin: 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: #f3efe6;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.scene {
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+    height: 450px;
+}
+
+/* Лента */
+.ribbon {
+    position: absolute;
+    left: -20%;
+    width: 140%;
+    height: 90px;
+    background: #7b8063;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* Диагонали */
+.ribbon-a {
+    top: 40%;
+    transform: rotate(-28deg);
+}
+
+.ribbon-b {
+    top: 40%;
+    transform: rotate(28deg);
+}
+
+/* Бегущая строка */
+.track {
+    display: flex;
+    width: max-content;
+    white-space: nowrap;
+    color: rgba(232, 230, 217, 1);
+    animation: marquee 12s linear infinite;
+}
+
+.track.reverse {
+    animation-direction: reverse;
+    color: rgba(91, 97, 66, 0.57);
+}
+
+.track span {
+    font-family: "Noto Serif Armenian";
+    font-weight: 300;
+    display: inline-block;
+    padding-right: 80px;
+    font-size: 60px;
+    line-height: 3;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.U {
+    width: 50px;
+    height: 50px;
 }
