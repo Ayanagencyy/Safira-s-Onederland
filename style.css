@@ -976,3 +976,9 @@ h6 {
         left: 40%;
     }
 }
+
+.start {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
