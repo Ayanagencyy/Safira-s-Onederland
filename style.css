@@ -362,7 +362,7 @@ video {
 /*Maps****************************************************************************************************************************************/
 
 .maps {
-    margin: -100px auto;
+    margin: -130px auto;
     background-image: url(Images/map_background.png);
     background-repeat: no-repeat;
     background-position: center;
