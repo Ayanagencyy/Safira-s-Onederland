@@ -982,3 +982,31 @@ h6 {
     top: 40%;
     transform: translateY(-50%);
 }
+
+
+.rd {
+    max-width: 360px;
+    width: 100%;
+}
+
+.h {
+    font-size: 24px;
+    color: rgba(61, 82, 30, 1);
+    font-family: "NorKirk";
+    font-weight: 600;
+}
+
+.t {
+    text-align: start;
+    margin: 5px 0;
+    font-size: 12px;
+    /* font-weight: 600; */
+    font-family: "Noto Sans Armenian", sans-serif;
+
+    color: rgba(61, 82, 30, 1);
+}
+
+h1 {
+    text-align: center;
+}
+
